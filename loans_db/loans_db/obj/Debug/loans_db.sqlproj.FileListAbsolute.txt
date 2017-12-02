@@ -1,0 +1,5 @@
+C:\Users\User\source\repos\Mortgage_ETL\loans_db\loans_db\bin\Debug\loans_db.dacpac
+C:\Users\User\source\repos\Mortgage_ETL\loans_db\loans_db\bin\Debug\loans_db.dll
+C:\Users\User\source\repos\Mortgage_ETL\loans_db\loans_db\bin\Debug\loans_db.pdb
+C:\Users\User\source\repos\Mortgage_ETL\loans_db\loans_db\obj\Debug\loans_db.dll
+C:\Users\User\source\repos\Mortgage_ETL\loans_db\loans_db\obj\Debug\loans_db.pdb
