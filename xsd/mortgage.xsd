@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MASTER">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+              <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+              <xs:element minOccurs="0" name="M_BorrowerID" type="xs:string" />
+              <xs:element minOccurs="0" name="ClassType" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="OriginalPrincipalBalance" type="xs:decimal" />
+              <xs:element minOccurs="0" name="LoanOriginationDate" type="xs:string" />
+              <xs:element minOccurs="0" name="MaturityDate" type="xs:string" />
+              <xs:element minOccurs="0" name="TermToMaturity" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="Guarantee" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="LoanTypeIndicator" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="Sector" type="xs:string" />
+              <xs:element minOccurs="0" name="INCOME">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                    <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                    <xs:element minOccurs="0" name="DTI" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LTI" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="SelfCertification" type="xs:string" />
+                    <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string" />
+                    <xs:element minOccurs="0" name="TotalIncome" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BorrowerBirthDate" type="xs:string" />
+                    <xs:element minOccurs="0" name="IndexedDTI" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="IndexedLTI" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="IndexedTotalIncome" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="MaxBorrowerIncome" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="BorrowerTotalIncome" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LivingExpenses" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="CurrentInterestShock" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="MonthlyNetIncome" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="MonthlyMortgageInterest" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="MonthlyMortgagePrincipal" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="MonthlyIncomeBuffer" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="MORTGAGE">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                    <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                    <xs:element minOccurs="0" name="BTLStatus" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="RepaymentType" type="xs:string" />
+                    <xs:element minOccurs="0" name="SecondLien" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="RATES">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                    <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                    <xs:element minOccurs="0" name="ReversionaryDate" type="xs:string" />
+                    <xs:element minOccurs="0" name="InterestStartDate" type="xs:date" />
+                    <xs:element minOccurs="0" name="RemainingFixedRateTerm" type="xs:int" />
+                    <xs:element minOccurs="0" name="PrincipalStartDate" type="xs:string" />
+                    <xs:element minOccurs="0" name="OriginalFixedRateTerm" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="SECURITIZATION">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                    <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                    <xs:element minOccurs="0" name="LifetimeBasePD" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LifetimeBasePDOverride" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="Multiple_NEW" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LifetimeBasePPOverride" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="VALUATION">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                    <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                    <xs:element minOccurs="0" name="OriginalPropertyValue" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="PropertyValuationDate" type="xs:string" />
+                    <xs:element minOccurs="0" name="OriginalLTV" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="OriginalLTFV" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="OriginalForeclosureValue" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="IndexedLTFV" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="CurrentForeclosureValue" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="CurrentPropertyValue" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="CurrentNetPropertyValue" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="ForeclosureResidualDebtEstimate" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LoanLossEstimate" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="LoanPrice" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="HISTORY">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="HISTORY">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                          <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                          <xs:element minOccurs="0" name="ReportDate" type="xs:string" />
+                          <xs:element minOccurs="0" name="CurrentPrincipalBalance" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="CurrentLTV" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="LoanAge" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="CurrentPropertyVal" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="Savings" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="CurrentIndexedLTV" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="DelinquencyStatus" />
+                          <xs:element minOccurs="0" name="BorrowerExposure" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="NoBorrowers" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="HISTORY_RATE">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="M_PoolID" type="xs:string" />
+                          <xs:element minOccurs="0" name="M_LoanID" type="xs:string" />
+                          <xs:element minOccurs="0" name="ReportDate" type="xs:string" />
+                          <xs:element minOccurs="0" name="CurrentRateType" type="xs:string" />
+                          <xs:element minOccurs="0" name="CurrentInterestRate" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="CurrentDTI" type="xs:decimal" />
+                          <xs:element minOccurs="0" name="CurrentLTFV" type="xs:decimal" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

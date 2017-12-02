@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Mortgage_ETL", "Mortgage_ETL\Mortgage_ETL.dtproj", "{3E74F88C-2E15-4533-998C-AAD3BF703D3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E74F88C-2E15-4533-998C-AAD3BF703D3D}.Development|Default.ActiveCfg = Development
+		{3E74F88C-2E15-4533-998C-AAD3BF703D3D}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED758F71-FD8A-40AC-83F7-4EC58FD8580C}
+	EndGlobalSection
+EndGlobal
